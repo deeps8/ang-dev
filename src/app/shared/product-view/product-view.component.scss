@@ -1,0 +1,50 @@
+.p-list{
+  text-align: center;
+  .product{
+    width: 30%;
+    display: inline-grid;
+    margin: 1%;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    img{
+      width: 100%;
+    }
+    .product-details{
+      padding: 5px;
+    }
+    .hover-content{
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      a{
+        margin-left: 10px;
+        padding: 10px;
+        background: white;
+        border-radius: 100%;
+      }
+    }
+  }
+  .product a:hover + .hover-content{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 769px) {
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .p-list{
+    .product{
+      width: 45%;
+    }
+  }
+
+}
